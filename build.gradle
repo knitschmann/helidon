@@ -1,0 +1,22 @@
+plugins {
+    id "java"
+    id "com.zyxist.chainsaw" version "0.3.1"
+}
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 10
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "io.helidon.webserver:helidon-webserver:0.9.1"
+    compile "io.helidon.webserver:helidon-webserver-netty:0.9.1"
+    compile "io.helidon.webserver:helidon-webserver-json:0.9.1"
+
+    // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.1'
+
+}
